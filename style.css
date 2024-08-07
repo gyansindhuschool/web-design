@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: beige;
+}
+#top-nav{
+    overflow: hidden;
+    background-color: rgb(26, 90, 139);
+}
+.nav-menu{
+    float: left;
+}
+.nav-menu .nav-link{
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+.dropdown{
+    float: right;
+    overflow: hidden;
+}
+.dropdown .dropdown-link{
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.dropdown-items{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 150px;
+    box-shadow:  0px 8px 10px 0px #8db58d;
+}
+.dropdown:hover .dropdown-items{
+    display: block;
+}
+.dropdown-link:hover{
+    background-color: #006600;
+    color: #fff;
+}
+.dropdown-items a{
+    float: none;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-items a:hover{
+    background-color: #ddd;
+}
+.nav-menu > a:hover{
+    background-color: #006600;
+    color: #fff;
+}
+.background{
+    position: relative;
+    display: inline-block;
+}
+.background img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.title{
+    font-size: 30px;
+    line-height: 35pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 40%; 
+    left: 20%; 
+    transform: translate(-35%, -20%); 
+}
+.q-btn{
+    border: 0px;
+    border-radius: 8px;
+    font-family: Lato;
+    color: #ffffff;
+    outline: 0px;
+    font-size: 15px;
+    padding:10px;
+    margin: 5px;
+    background-color: rgb(26, 90, 139);
+}
+.q-btn:hover{
+    color: rgb(26, 90, 139);
+    background-color: #ffffff;
+}
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-card{
+    background-color: rgb(8, 168, 117);
+    border: 1px solid rgb(8, 168, 117);
+    color: #fff;
+    border-radius: 15px;
+    padding: 50px;
+    margin: 50px;
+    line-height: 30px;
+    text-align: center;
+}
+.service-heading{
+    font-size: 30px;
+    font-family: monospace;
+    color: #024178;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
